@@ -29,7 +29,7 @@ void setup() {
   servoR.attach(9);
 
   stopMotors();
-  delay(1000); // Wait before starting
+  delay(20000); // Wait before starting
     // Example movement sequence (modify as needed)
     moveForward();
     delay(cellDistance);
