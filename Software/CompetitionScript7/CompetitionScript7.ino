@@ -17,7 +17,7 @@
 #include "utility/Adafruit_MS_PWMServoDriver.h"
 #include <Arduino.h>
 #include <Queue.h>
-#include "ICM_20948.h"
+#include "SparkFun_Qwiic_OTOS_Arduino_Library.h"
 #include <Wire.h>
 
 int targetTime = 7; // in seconds
@@ -63,7 +63,7 @@ int rightTrim = 0;
 #define WIRE_PORT Wire
 #define AD0_VAL 1
 
-ICM_20948_I2C myICM;
+QwiicOTOS myOTOS;
 
 // Motor
 Adafruit_MotorShield motorShield = Adafruit_MotorShield();
